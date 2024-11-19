@@ -14,6 +14,9 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { Link } from 'react-router-dom';
 
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import EmailIcon from '@mui/icons-material/AttachEmail';
+import logo from '../Multim/logo.jpg';
 
 const pages = ['Inicio','Productos', 'Nosotros', 'Contacto'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -38,10 +41,19 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{ fontFamily: 'Poppins, sans-serif', background: 'white' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+        <Box
+          component="img"
+          src={logo}
+          alt="Logo"
+          sx={{
+            display: { xs: 'none', md: 'flex' },
+            height: 70, // Ajusta el tamaño según tus preferencias
+            mr: 1,
+          }}
+        />
           <Typography
             variant="h6"
             noWrap
@@ -57,7 +69,7 @@ function ResponsiveAppBar() {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            {/* Texto: LOGO*/}
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -97,6 +109,7 @@ function ResponsiveAppBar() {
               ))}
             </Menu>
           </Box>
+
           <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
           <Typography
             variant="h5"
@@ -110,20 +123,32 @@ function ResponsiveAppBar() {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'inherit',
+              color: 'inherit',/*color del boton*/
               textDecoration: 'none',
             }}
           >
             LOGO
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', paddingLeft: 400} }}>
             {/* Usar Link para la navegación */}
             {pages.map((page) => (
               <Link to={`/${page.toLowerCase()}`} style={{ textDecoration: 'none' }} key={page}>
                 <Button
                   onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: 'white', display: 'block' }}
+                  sx={{ 
+                    my: 2, 
+                    color: 'white', 
+                    display: 'block', 
+                    mx:3,
+                    fontFamily: 'Poppins, sans-serif',  // Asegurando que se usa Poppins
+                    fontWeight: 'bold',  // Esto hace que el texto esté en negrita
+                    backgroundColor: 'white',  // Cambia el fondo
+                    '&:hover': {
+                      backgroundColor: '#CED0D1',  // Cambia el color de fondo cuando pasa el mouse
+                    },
+                    color: '#3F74B9',// color de la fuente del texto de barra
+                  }}
                 >
                   {page}
                 </Button>
@@ -131,35 +156,14 @@ function ResponsiveAppBar() {
             ))}
           </Box>
 
-          <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-              </IconButton>
-            </Tooltip>
-            <Menu
-              sx={{ mt: '45px' }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography sx={{ textAlign: 'center' }}>{setting}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
+            {/* Ícono de WhatsApp en la parte derecha */}
+          <IconButton color="inherit" href="https://wa.me/1234567890" target="_blank">
+            <WhatsAppIcon sx={{ color: '#25D366', fontSize: '2rem' }}/>
+          </IconButton>
+            {/* Ícono de email en la parte derecha */}
+          <IconButton color="inherit" href="moliviceirl@gmail.com" target="_blank">
+            <EmailIcon sx={{ color: 'black', ml: 1, fontSize: '2rem' }}/>
+          </IconButton>
         </Toolbar>
       </Container>
     </AppBar>

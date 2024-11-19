@@ -1,0 +1,95 @@
+
+/*Cuadros contacto*/
+
+.info-boxes {
+    display: flex;
+    justify-content: space-around; /* Distribuye los cuadros de forma equitativa */
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.info-boxes .box {
+    text-align: center;
+    padding: 10px;
+    background-color: #3f74b9;
+    border-radius: 10px;
+    width: 23%;
+}
+
+.info-boxes .circle {
+    width: 120px;
+    height: 120px;
+    background-color: white; /* Fondo blanco para el círculo */
+    border-radius: 50%; /* Hace el div circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px; /* Centra el círculo */
+}
+
+.info-boxes .circle img {
+    width: 80px; /* Ajusta el tamaño del GIF */
+    height: 80px;
+    border-radius: 50%; /* Opcional: hace que el GIF también sea redondo */
+}
+
+.info-boxes .box h2 {
+    color:white;
+}
+
+.info-boxes .box p {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .info-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-boxes .box {
+        width: 80%; /* Ajusta el tamaño para pantallas pequeñas */
+        margin-bottom: 20px;
+    }
+}
+
+.imagen-contacto {
+    width: 150%; /* Asegura que el contenedor ocupe todo el ancho */
+    overflow: hidden; /* Oculta cualquier desbordamiento */
+    position: relative; /* Necesario para el posicionamiento absoluto del pseudo-elemento */
+    margin: 0; /* Elimina márgenes externos */
+    padding: 0; /* Elimina relleno interno */
+}
+
+
+.imagen-contacto img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+    display: block; /* Elimina el espacio en blanco debajo de la imagen */
+}
+
+/* Añadir un pseudo-elemento para el sombreado */
+.imagen-contacto::before {
+    content: ''; /* Necesario para crear el pseudo-elemento */
+    position: absolute; /* Posiciona el pseudo-elemento */
+    top: 0; /* Alinea al principio del contenedor */
+    left: 0; /* Alinea al principio del contenedor */
+    right: 0; /* Alinea al final del contenedor */
+    bottom: 0; /* Alinea al final del contenedor */
+    background-color: rgba(45, 79, 124, 0.65); /* Color de sombreado con opacidad */
+    z-index: 1; /* Asegura que el sombreado esté detrás del contenido */
+}
+
+.titulo-contacto{
+    position: absolute; /* Posiciona el texto de forma absoluta */
+    top: 60%; /* Centra verticalmente */
+    left: 34%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta la posición al centro */
+    color: white; /* Color del texto */
+    font-size: 3em; /* Ajusta el tamaño del texto */
+    z-index: 2; /* Asegura que el texto esté encima del sombreado */
+    text-align: center; /* Centra el texto */
+}
