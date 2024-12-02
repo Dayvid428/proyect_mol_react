@@ -10,16 +10,14 @@ import ubicacion from '../Multim/ubicacion.gif';
 
 function Contacto() {
   return (
-    <section id="contacto" className="contacto container">
-
+      <div>
       <div className="imagen-contacto">
         <img src={CONTACTO_FONDO} alt="Fondo de contacto" />
-        <Typography variant="h5" className="titulo-contacto">
+        <Typography variant="h3" sx={{ fontWeight: 'bold' }} className="titulo-contacto">
           CONTACTO
         </Typography>
       </div>
 
-      {/* Sección de cuadros */}
       <div className="info-boxes">
         <div className="box">
           <div className="circle">
@@ -82,7 +80,7 @@ function Contacto() {
           title="Ubicación"
         ></iframe>
       </div>
-    </section>
+      </div>
   );
 }
 

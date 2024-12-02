@@ -1,0 +1,71 @@
+
+/*iconos inferior derecha, wp y correo*/
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    cursor: pointer;
+}
+.whatsapp-icon img {
+    max-width: 70%;
+    height: auto;
+}
+
+/* nube */
+.tooltip {
+    visibility: hidden; /* Ocultamos el tooltip por defecto */
+    width: auto; /* Ancho del tooltip */
+    background-color: #555; /* Color de fondo del tooltip */
+    color: #fff; /* Color del texto */
+    text-align: center; /* Alinear el texto al centro */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 5px; /* Espaciado interno */
+    position: absolute; /* Posición absoluta */
+    z-index: 1; /* Asegura que el tooltip esté por encima */
+    bottom: 0%; /* Coloca el tooltip encima del botón */
+    left: -90px; /* Centra el tooltip horizontalmente */
+    right: 120%;
+    margin-left: -60px; /* Ajusta la posición para centrar */
+    opacity: 0; /* Hace el tooltip invisible */
+    transition: opacity 0.3s; /* Añade una transición suave */
+}
+
+.whatsapp-icon:hover .tooltip {
+    visibility: visible; /* Muestra el tooltip al pasar el mouse */
+    opacity: 1; /* Hace el tooltip visible */
+}
+
+.email-button img{
+    max-width: 70%;
+    height: auto;
+}
+.email-button {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #000000c5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    cursor: pointer;
+}
+
+
+.email-button:hover .tooltip {
+    visibility: visible; /* Muestra el tooltip al pasar el mouse */
+    opacity: 1; /* Hace el tooltip visible */
+}

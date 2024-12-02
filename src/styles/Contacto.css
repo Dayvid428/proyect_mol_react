@@ -1,4 +1,12 @@
 
+.contacto{
+    margin: 0; /* Sin márgenes */
+    padding: 0; /* Sin relleno */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
+
+}
+
 /*Cuadros contacto*/
 
 .info-boxes {
@@ -89,7 +97,7 @@
     left: 34%; /* Centra horizontalmente */
     transform: translate(-50%, -50%); /* Ajusta la posición al centro */
     color: white; /* Color del texto */
-    font-size: 3em; /* Ajusta el tamaño del texto */
+    font-size: 3rem; /* Ajusta el tamaño del texto */
     z-index: 2; /* Asegura que el texto esté encima del sombreado */
     text-align: center; /* Centra el texto */
 }

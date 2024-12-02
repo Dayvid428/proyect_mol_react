@@ -1,0 +1,18 @@
+.custom-footer {
+    width: 100%;
+    padding: 0;
+  }
+  
+  .custom-footer .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .custom-footer .border-bottom {
+    margin: 0;
+  }
+  
+  .custom-footer .p-4 {
+    padding: 0;
+  }
+  
