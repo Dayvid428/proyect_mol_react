@@ -91,7 +91,7 @@ function ResponsiveAppBar() {
           </Box>
 
           {/* Navegación para dispositivos grandes */}
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', paddingLeft: 300 } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', paddingLeft: 300 }, justifyContent: 'flex-end'  }}>
             {pages.map((page) => {
               if (page === 'Productos') {
                 return (

@@ -43,8 +43,7 @@
 .vm-img{
     max-width: 160%;
     height: auto;
-    margin-left: 130px;
-    padding-top: 30px;
+
 }
 
 .vision-mision {
@@ -53,19 +52,19 @@
     margin-top: 20px; /* Espacio entre el cuadro blanco y los cuadros de visión/misión */
     margin-left: 70px;
     margin-right: 70px;
+    justify-content: center;
+    align-items: center;
 }
 
 .cuadro-azul {
-    margin-top: 20px; /* Espacio entre secciones*/
-    margin-bottom: 20px; /*espacio entre secciones*/
-    flex: 1; /* Ajusta esto si deseas que los cuadros tengan un tamaño específico */
+    display: flex;
+    flex-direction: column; /* Asegura que el contenido esté apilado verticalmente */
+    align-items: center;    /* Centra horizontalmente todo el contenido */
+    justify-content: flex-start; /* Asegura que el contenido quede en la parte superior */
     background-color: #3f74b9;
-    margin-left: 30px; /* Espacio entre los cuadros (ajusta según sea necesario) */
-    margin-right: 30px; /* Espacio entre los cuadros (ajusta según sea necesario) */
-    padding-top: 30px;
-    padding-bottom: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 30px 50px 50px 50px;
+    margin: 20px 30px;
+
 }
 .cuadro-azul h3 {
     margin-left: 30px;
@@ -83,6 +82,17 @@
     color: #cccccc;
     text-align: justify;
     font-weight: normal;
+}
+/*Cuadro valores*/
+.cuadro-azul-valores {
+    margin-top: 20px; /* Espacio entre secciones*/
+    margin-bottom: 20px; /*espacio entre secciones*/
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 30px 50px 50px 50px;
+    background-color: #3f74b9;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 /*hist*/

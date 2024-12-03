@@ -3,10 +3,10 @@ import React from 'react';
 import '../styles/Contacto.css';
 import { Box, Typography } from '@mui/material';
 import CONTACTO_FONDO from '../Multim/CONTACTO_FONDO.PNG';
-import calendario from '../Multim/calendario.gif';
-import mensaje from '../Multim/mensaje.gif';
-import telefono from '../Multim/telefono.gif';
-import ubicacion from '../Multim/ubicacion.gif';
+import calendario from '../Multim/calendario.PNG';
+import mensaje from '../Multim/correo.PNG';
+import telefono from '../Multim/telefono.PNG';
+import ubicacion from '../Multim/ubicacion.PNG';
 
 function Contacto() {
   return (
@@ -14,6 +14,8 @@ function Contacto() {
       <div className="imagen-contacto">
         <img src={CONTACTO_FONDO} alt="Fondo de contacto" />
         <Typography variant="h3" sx={{ fontWeight: 'bold' }} className="titulo-contacto">
+        <i class="fas fa-tty"></i>
+        <br/>
           CONTACTO
         </Typography>
       </div>

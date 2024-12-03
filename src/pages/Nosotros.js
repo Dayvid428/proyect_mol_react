@@ -63,7 +63,7 @@ function Nosotros() {
           <img src={historiaActual.imagen} alt="Imagen de la empresa" />
         </div>
         <div className="cuadro-blanco">
-          <h3 style={{ fontFamily: 'Poppins, sans-serif', fontWeight: 'bold' }}>QUIÉNES SOMOS</h3>
+          <h3 style={{ fontFamily: 'Poppins, sans-serif', fontWeight: 'bold' }}>SOBRE NOSOTROS</h3>
           <p style={{ fontFamily: 'Poppins, sans-serif', lineHeight: 1.6 }}>
             Somos una empresa dedicada a la producción de productos de jebe de alta calidad, comprometidos con la satisfacción de nuestros clientes y el desarrollo sostenible.
           </p>
