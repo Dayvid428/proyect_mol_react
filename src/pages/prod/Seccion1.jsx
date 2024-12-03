@@ -13,7 +13,7 @@ import {
 const Seccion1 = () => {
   return (
     
-    <Box sx={{ mt: 8 }}>
+    <Box sx={{ mt: 8, px:4 }}>
       <h1>Sección 1</h1>
       <MDBRow className='row-cols-1 row-cols-md-3 g-4'>
       <MDBCol>

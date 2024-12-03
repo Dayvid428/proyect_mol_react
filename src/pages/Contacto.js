@@ -11,6 +11,7 @@ import ubicacion from '../Multim/ubicacion.PNG';
 function Contacto() {
   return (
       <div>
+      <Box sx={{ mt: 7 }} >
       <div className="imagen-contacto">
         <img src={CONTACTO_FONDO} alt="Fondo de contacto" />
         <Typography variant="h3" sx={{ fontWeight: 'bold' }} className="titulo-contacto">
@@ -65,7 +66,7 @@ function Contacto() {
           <Typography variant="body1">
             <br />
             <br />
-            Av. Ejemplo 123, Lima
+            Av. Tambo Rio Psje comun fnd. Chacra Cerro Lote 34Q COMAS - LIMA - LIMA
             <br />
             <br />
           </Typography>
@@ -82,6 +83,7 @@ function Contacto() {
           title="Ubicación"
         ></iframe>
       </div>
+      </Box>
       </div>
   );
 }

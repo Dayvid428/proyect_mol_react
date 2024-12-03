@@ -1,11 +1,29 @@
 .nosotros{
     background-color: rgb(212, 212, 212);
+    
 }
 
 .nosotros-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+/*nosotros header*/
+.nosotros-header {
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+    display: flex; /* Opcional: Centra contenido si necesitas */
+    justify-content: center; /* Opcional: Asegura que la imagen se alinee */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.nosotros-header img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho */
+    height: auto; /* Mantiene las proporciones */
+    object-fit: cover; /* Ajusta cómo se adapta la imagen al contenedor */
 }
 
 .imagen-nosotros {

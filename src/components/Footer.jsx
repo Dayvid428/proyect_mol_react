@@ -67,10 +67,10 @@ export default function Footer() {
 
             <MDBCol md="4" lg="3" xl="3" className='mx-auto mb-md-0 mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>Contactanos</h6>
-              <p><MDBIcon icon="home" className="me-2" /> New York, NY 10012, US</p>
-              <p><MDBIcon icon="envelope" className="me-3" /> info@example.com</p>
-              <p><MDBIcon icon="phone" className="me-3" /> + 01 234 567 88</p>
-              <p><MDBIcon icon="print" className="me-3" /> + 01 234 567 89</p>
+              <p><MDBIcon icon="home" className="me-2" /> Av. Tambo Rio Psje comun fnd. Chacra Cerro Lote 34Q COMAS    - LIMA</p>
+              <p><MDBIcon icon="envelope" className="me-3" /> moliviceirl@gmail.com</p>
+              <p><MDBIcon icon="phone" className="me-3" /> + 51 988460274</p>
+              <p><MDBIcon icon="print" className="me-3" /> + 01 988460274</p>
             </MDBCol>
           </MDBRow>
         </div>

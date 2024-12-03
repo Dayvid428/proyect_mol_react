@@ -66,11 +66,12 @@
 }
 
 .imagen-contacto {
-    width: 150%; /* Asegura que el contenedor ocupe todo el ancho */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
     overflow: hidden; /* Oculta cualquier desbordamiento */
     position: relative; /* Necesario para el posicionamiento absoluto del pseudo-elemento */
     margin: 0; /* Elimina márgenes externos */
     padding: 0; /* Elimina relleno interno */
+    justify-content: center;
 }
 
 
@@ -92,13 +93,14 @@
     z-index: 1; /* Asegura que el sombreado esté detrás del contenido */
 }
 
-.titulo-contacto{
+.titulo-contacto {
     position: absolute; /* Posiciona el texto de forma absoluta */
-    top: 60%; /* Centra verticalmente */
-    left: 34%; /* Centra horizontalmente */
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
     transform: translate(-50%, -50%); /* Ajusta la posición al centro */
     color: white; /* Color del texto */
     font-size: 3rem; /* Ajusta el tamaño del texto */
     z-index: 2; /* Asegura que el texto esté encima del sombreado */
     text-align: center; /* Centra el texto */
 }
+

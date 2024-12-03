@@ -51,12 +51,15 @@ function Nosotros() {
   const historiaActual = historias[indiceActual];
 
   return (
-    <Box sx={{ mt: 8, px: 4 }}>
+    <div>
+    <div className="nosotros-header">
+          <img src={ima_1} alt="Imagen header nosotros"/>
+    </div>
+    <Box sx={{ mt: 8, px: 4}}>  
       {/* Título principal */}
-      <h2 style={{ textAlign: 'center', fontFamily: 'Poppins, sans-serif', marginBottom: '20px' }}>
+      <h2 style={{ fontFamily: 'Poppins, sans-serif', marginBottom: '20px' }}>
         Nosotros
       </h2>
-
       {/* Sección de Quiénes Somos */}
       <div className="nosotros-content">
         <div className="imagen-nosotros">
@@ -119,6 +122,7 @@ function Nosotros() {
         </div>
       </div>
     </Box> 
+    </div>
   );
 }
 

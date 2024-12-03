@@ -30,6 +30,16 @@ export default function App() {
         </MDBCarouselCaption>
       </MDBCarouselItem>
     </MDBCarousel>
+    <div className='inicio-contenido' >
+      <h1>
+        Productos de alta calidad para los diversos sectores:
+        * asd
+        * asd
+        * asd
+        * asd
+        * asd
+      </h1>
+    </div>
     </Box>
   );
 }
