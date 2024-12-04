@@ -45,10 +45,12 @@ export default function App() {
         </p>
           <img src={ima_1} alt="imagen nuestros princ secetores" />
         </div>
+        <div className='Secciones-inicio'>
         <h1>
           Nuestros Principales Sectores:
         </h1>
         <Secciones/>
+        </div>
       </div>
     </Box>
     </div>
