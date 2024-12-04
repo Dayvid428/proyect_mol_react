@@ -47,7 +47,7 @@ export default function App() {
         </div>
         <div className='Secciones-inicio'>
         <h1>
-          Nuestros Principales Sectores:
+          NUESTROS PRINCIPALES SECTORES:
         </h1>
         <Secciones/>
         </div>
