@@ -1,9 +1,12 @@
 import React from 'react';
 import { MDBCarousel, MDBCarouselItem, MDBCarouselCaption } from 'mdb-react-ui-kit';
 import { Box } from '@mui/material';
-
+import ima_1 from '../Multim/ima_1.jpg';
+import '../styles/Inicio.css';
+import Secciones from './inic/Secciones';
 export default function App() {
   return (
+    <div>
     <Box sx={{ mt: 8 }}>
     <MDBCarousel showIndicators showControls fade>
       <MDBCarouselItem itemId={1}>
@@ -30,16 +33,24 @@ export default function App() {
         </MDBCarouselCaption>
       </MDBCarouselItem>
     </MDBCarousel>
-    <div className='inicio-contenido' >
-      <h1>
-        Productos de alta calidad para los diversos sectores:
-        * asd
-        * asd
-        * asd
-        * asd
-        * asd
-      </h1>
-    </div>
     </Box>
+    <Box sx={{ mt: 8 , px: 4}}>
+      <div className='inicio-contenido' >
+        <h1>
+          PRODUCTOS DE ALTA CALIDAD
+        </h1>
+        <div className='contenido-flex'>
+        <p>
+          Industria de Jebe Molivic E.I.R.L. se especializa en la fabricación de productos de caucho y jebe de alta calidad, diseñados para satisfacer las necesidades de los sectores. Ofrecemos soluciones confiables, resistentes y personalizadas para asegurar el máximo desempeño en aplicaciones exigentes. Nuestro compromiso es proporcionar innovación, durabilidad y excelencia en cada uno de nuestros productos.
+        </p>
+          <img src={ima_1} alt="imagen nuestros princ secetores" />
+        </div>
+        <h1>
+          Nuestros Principales Sectores:
+        </h1>
+        <Secciones/>
+      </div>
+    </Box>
+    </div>
   );
 }

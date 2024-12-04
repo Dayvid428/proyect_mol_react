@@ -1,0 +1,31 @@
+.inicio-contenido {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .inicio-contenido h1 {
+    margin-bottom: 50px;
+    text-align: left;
+    color:#3f74b9;
+  }
+  
+  .contenido-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px; /* Espaciado entre texto e imagen */
+  }
+  
+  .contenido-flex p {
+    flex: 1; /* El texto ocupará el espacio necesario */
+    margin: 0;
+    text-align: justify; /* Opcional: alinear texto de forma justificada */
+  }
+  
+  .contenido-flex img {
+    flex-shrink: 0; /* Evita que la imagen se reduzca demasiado */
+    width: 100%; /* Ajusta el tamaño de la imagen */
+    max-width: 700px; /* Tamaño máximo de la imagen */
+    height: auto;
+  }
+  
