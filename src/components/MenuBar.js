@@ -125,12 +125,68 @@ function ResponsiveAppBar() {
                       >
                         {page}
                       </MDBDropdownToggle>
-                      <MDBDropdownMenu>
-                        <MDBDropdownItem link href="/productos/seccion1">Sección 1</MDBDropdownItem>
-                        <MDBDropdownItem link href="/productos/seccion2">Sección 2</MDBDropdownItem>
-                        <MDBDropdownItem link href="/productos/seccion3">Sección 3</MDBDropdownItem>
-                        <MDBDropdownItem link href="/productos/seccion4">Sección 4</MDBDropdownItem>
-                        <MDBDropdownItem link href="/productos/seccion5">Sección 5</MDBDropdownItem>
+                      <MDBDropdownMenu style={{ padding: 20}}>
+                        <MDBDropdownItem style={{ padding: 10}}>
+                          <Link
+                            to="/productos/seccion1"
+                            style={{
+                              textDecoration: 'none',  // Quitar el subrayado
+                              color: 'inherit',        // Heredar el color del texto de su contenedor
+                              paddingLeft: -20,
+                              margingBottom:100,
+                            }}
+                          >
+                            Sección 1
+                          </Link>
+                        </MDBDropdownItem>
+                        <MDBDropdownItem style={{ padding: 10}}>
+                          <Link
+                            to="/productos/seccion2"
+                            style={{
+                              textDecoration: 'none',  // Quitar el subrayado
+                              color: 'inherit',        // Heredar el color del texto de su contenedor
+                              paddingLeft: -20,
+                            }}
+                          >
+                            Sección 2
+                          </Link>
+                        </MDBDropdownItem>
+                        <MDBDropdownItem style={{ padding: 10}}>
+                          <Link
+                            to="/productos/seccion3"
+                            style={{
+                              textDecoration: 'none',  // Quitar el subrayado
+                              color: 'inherit',        // Heredar el color del texto de su contenedor
+                              paddingLeft: -20,
+                            }}
+                          >
+                            Sección 3
+                          </Link>
+                        </MDBDropdownItem>
+                        <MDBDropdownItem style={{ padding: 10}}>
+                          <Link
+                            to="/productos/seccion4"
+                            style={{
+                              textDecoration: 'none',  // Quitar el subrayado
+                              color: 'inherit',        // Heredar el color del texto de su contenedor
+                              paddingLeft: -20,
+                            }}
+                          >
+                            Sección 4
+                          </Link>
+                        </MDBDropdownItem>
+                        <MDBDropdownItem style={{ padding: 10}}>
+                          <Link
+                            to="/productos/seccion5"
+                            style={{
+                              textDecoration: 'none',  // Quitar el subrayado
+                              color: 'inherit',        // Heredar el color del texto de su contenedor
+                              paddingLeft: -20,
+                            }}
+                          >
+                            Sección 5
+                          </Link>
+                        </MDBDropdownItem>
                       </MDBDropdownMenu>
                     </MDBDropdown>
                   </MDBBtnGroup>
@@ -158,7 +214,7 @@ function ResponsiveAppBar() {
           </Box>
 
           {/* Íconos de redes */}
-          <IconButton color="inherit" href="https://wa.me/1234567890" target="_blank">
+          <IconButton color="inherit" href="https://wa.me/51988460274" target="_blank">
             <WhatsAppIcon sx={{ color: '#25D366', fontSize: '2rem' }} />
           </IconButton>
           <IconButton color="inherit" href="mailto:moliviceirl@gmail.com" target="_blank">
