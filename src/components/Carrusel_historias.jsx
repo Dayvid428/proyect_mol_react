@@ -33,6 +33,36 @@ export default function App() {
         <h5>Third slide label</h5>
         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
       </MDBCarouselItem>
+
+      <MDBCarouselItem
+        className='w-100 d-block'
+        itemId={4}
+        src='https://mdbootstrap.com/img/Photos/Slides/img%20(19).jpg'
+        alt='...'
+      >
+        <h5>4 slide label</h5>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      </MDBCarouselItem>
+
+      <MDBCarouselItem
+        className='w-100 d-block'
+        itemId={5}
+        src='https://mdbootstrap.com/img/Photos/Slides/img%20(35).jpg'
+        alt='...'
+      >
+        <h5>5 slide label</h5>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      </MDBCarouselItem>
+
+      <MDBCarouselItem
+        className='w-100 d-block'
+        itemId={6}
+        src='https://mdbootstrap.com/img/Photos/Slides/img%20(40).jpg'
+        alt='...'
+      >
+        <h5>6 slide label</h5>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      </MDBCarouselItem>
     </MDBCarousel>
   );
 }

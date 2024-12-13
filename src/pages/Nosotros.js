@@ -99,7 +99,7 @@ function Nosotros() {
       </div>
 
       {/* Sección de Historia */}
-      <h3 className="titulo-historia" style={{ textAlign: 'center', margin: '20px 0' }}>
+      <h3 className="titulo-historia" style={{ margin: '20px 0' }}>
         NUESTRA HISTORIA
       </h3>
 

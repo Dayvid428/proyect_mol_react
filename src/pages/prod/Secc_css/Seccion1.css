@@ -1,30 +1,37 @@
 .seccion1-contenido {
-    margin-top: 100px;
-    text-align: center;
-  }
-  
-  .seccion1-contenido h1 {
-    margin-bottom: 20px;
-    text-align: left;
-    color:#3f74b9;
-  }
-  
-  .contenido-flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 50px; /* Espaciado entre texto e imagen */
-  }
-  
-  .contenido-flex p {
-    flex: 1; /* El texto ocupará el espacio necesario */
-    margin: 0;
-    text-align: justify; /* Opcional: alinear texto de forma justificada */
-  }
-  
-  .contenido-flex img {
-    flex-shrink: 0; /* Evita que la imagen se reduzca demasiado */
-    width: 100%; /* Ajusta el tamaño de la imagen */
-    max-width: 700px; /* Tamaño máximo de la imagen */
-    height: auto;
-  }
+  margin-top: 100px;
+  text-align: center;
+}
+
+.seccion1-contenido h1 {
+  margin-bottom: 20px;
+  text-align: left;
+  color:#3f74b9;
+}
+
+.contenido-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px; /* Espaciado entre texto e imagen */
+}
+
+.contenido-flex p {
+  flex: 1; /* El texto ocupará el espacio necesario */
+  margin: 0;
+  text-align: justify; /* Opcional: alinear texto de forma justificada */
+  padding-right: 150px;
+}
+
+.contenido-flex img {
+  flex-shrink: 0;
+  max-width: none; /* Elimina cualquier límite de ancho */
+  transform: scale(1.4); /* Escala la imagen al 150% de su tamaño */
+  transform-origin: center; /* Asegura que la escala sea desde el centro */
+  padding-right: 100px;
+}
+
+.productos{
+  margin-top: 150px;
+  margin-bottom: 100px;
+}

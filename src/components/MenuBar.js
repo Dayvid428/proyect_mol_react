@@ -125,69 +125,75 @@ function ResponsiveAppBar() {
                       >
                         {page}
                       </MDBDropdownToggle>
-                      <MDBDropdownMenu style={{ padding: 20}}>
-                        <MDBDropdownItem style={{ padding: 10}}>
-                          <Link
-                            to="/productos/seccion1"
+                        <MDBDropdownMenu
                             style={{
-                              textDecoration: 'none',  // Quitar el subrayado
-                              color: 'inherit',        // Heredar el color del texto de su contenedor
-                              paddingLeft: -20,
-                              margingBottom:100,
+                              padding: '0',           // Sin padding adicional
+                              minWidth: '200px',      // Ancho mínimo para evitar que el texto se divida
+                              whiteSpace: 'nowrap',   // Evitar saltos de línea en los elementos
+                              textAlign: 'left',      // Opcional: alinear texto a la izquierda si es necesario
                             }}
                           >
-                            Sección 1
-                          </Link>
-                        </MDBDropdownItem>
-                        <MDBDropdownItem style={{ padding: 10}}>
-                          <Link
-                            to="/productos/seccion2"
-                            style={{
-                              textDecoration: 'none',  // Quitar el subrayado
-                              color: 'inherit',        // Heredar el color del texto de su contenedor
-                              paddingLeft: -20,
-                            }}
-                          >
-                            Sección 2
-                          </Link>
-                        </MDBDropdownItem>
-                        <MDBDropdownItem style={{ padding: 10}}>
-                          <Link
-                            to="/productos/seccion3"
-                            style={{
-                              textDecoration: 'none',  // Quitar el subrayado
-                              color: 'inherit',        // Heredar el color del texto de su contenedor
-                              paddingLeft: -20,
-                            }}
-                          >
-                            Sección 3
-                          </Link>
-                        </MDBDropdownItem>
-                        <MDBDropdownItem style={{ padding: 10}}>
-                          <Link
-                            to="/productos/seccion4"
-                            style={{
-                              textDecoration: 'none',  // Quitar el subrayado
-                              color: 'inherit',        // Heredar el color del texto de su contenedor
-                              paddingLeft: -20,
-                            }}
-                          >
-                            Sección 4
-                          </Link>
-                        </MDBDropdownItem>
-                        <MDBDropdownItem style={{ padding: 10}}>
-                          <Link
-                            to="/productos/seccion5"
-                            style={{
-                              textDecoration: 'none',  // Quitar el subrayado
-                              color: 'inherit',        // Heredar el color del texto de su contenedor
-                              paddingLeft: -20,
-                            }}
-                          >
-                            Sección 5
-                          </Link>
-                        </MDBDropdownItem>
-                      </MDBDropdownMenu>
+                          <MDBDropdownItem style={{ padding: '10px' }}>
+                            <Link
+                              to="/productos/seccion1"
+                              style={{
+                                textDecoration: 'none',
+                                color: 'inherit',
+                                display: 'inline-block',  // Forzar que se comporte como contenido en línea
+                              }}
+                            >
+                              SECTOR CONSTRUCCIÓN
+                            </Link>
+                          </MDBDropdownItem>
+                          <MDBDropdownItem style={{ padding: '10px' }}>
+                            <Link
+                              to="/productos/seccion2"
+                              style={{
+                                textDecoration: 'none',
+                                color: 'inherit',
+                                display: 'inline-block',
+                              }}
+                            >
+                              SECTOR MARÍTIMO
+                            </Link>
+                          </MDBDropdownItem>
+                          <MDBDropdownItem style={{ padding: '10px' }}>
+                            <Link
+                              to="/productos/seccion3"
+                              style={{
+                                textDecoration: 'none',
+                                color: 'inherit',
+                                display: 'inline-block',
+                              }}
+                            >
+                              SECTOR AUTOMOTRÍZ
+                            </Link>
+                          </MDBDropdownItem>
+                          <MDBDropdownItem style={{ padding: '10px' }}>
+                            <Link
+                              to="/productos/seccion4"
+                              style={{
+                                textDecoration: 'none',
+                                color: 'inherit',
+                                display: 'inline-block',
+                              }}
+                            >
+                              SECTOR INDUSTRIAL
+                            </Link>
+                          </MDBDropdownItem>
+                          <MDBDropdownItem style={{ padding: '10px' }}>
+                            <Link
+                              to="/productos/seccion5"
+                              style={{
+                                textDecoration: 'none',
+                                color: 'inherit',
+                                display: 'inline-block',
+                              }}
+                            >
+                              SECTOR SANEAMIENTO
+                            </Link>
+                          </MDBDropdownItem>
+                        </MDBDropdownMenu>
                     </MDBDropdown>
                   </MDBBtnGroup>
                 );

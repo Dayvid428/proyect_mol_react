@@ -28,3 +28,7 @@
     max-width: 700px; /* Tamaño máximo de la imagen */
     height: auto;
   }
+  .productos{
+    margin-top: 150px;
+    margin-bottom: 100px;
+  }

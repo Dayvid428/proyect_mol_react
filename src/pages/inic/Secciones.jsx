@@ -24,10 +24,9 @@ const Secciones = () => {
             position='top'
           />
           <MDBCardBody>
-            <MDBCardTitle>SECCION 1</MDBCardTitle>
+            <MDBCardTitle>SECTOR CONSTRUCCIÓN</MDBCardTitle>
             <MDBCardText>
-              This is a longer card with supporting text below as a natural lead-in to additional content.
-              This content is a little bit longer.
+              Productos para el sector construcción.
             </MDBCardText>
           </MDBCardBody>
         </MDBCard>
@@ -42,8 +41,10 @@ const Secciones = () => {
             position='top'
           />
           <MDBCardBody>
-            <MDBCardTitle>SECCION 2</MDBCardTitle>
-            <MDBCardText>This is a short card.</MDBCardText>
+            <MDBCardTitle>SECTOR MARÍTIMO</MDBCardTitle>
+            <MDBCardText>
+              Productos para el sector marítimo.
+            </MDBCardText>
           </MDBCardBody>
         </MDBCard>
         </Link>
@@ -57,9 +58,9 @@ const Secciones = () => {
             position='top'
           />
           <MDBCardBody>
-            <MDBCardTitle>SECCION 3</MDBCardTitle>
+            <MDBCardTitle>SECTOR AUTOMOTRÍZ</MDBCardTitle>
             <MDBCardText>
-              This is a longer card with supporting text below as a natural lead-in to additional content.
+              Productos para el sector Automotríz
             </MDBCardText>
           </MDBCardBody>
         </MDBCard>
@@ -74,10 +75,9 @@ const Secciones = () => {
             position='top'
           />
           <MDBCardBody>
-            <MDBCardTitle>SECCION 4</MDBCardTitle>
+            <MDBCardTitle>SECTOR INDUSTRIAL</MDBCardTitle>
             <MDBCardText>
-              This is a longer card with supporting text below as a natural lead-in to additional content.
-              This content is a little bit longer.
+              Prodcutos para el sector industrial.
             </MDBCardText>
           </MDBCardBody>
         </MDBCard>
@@ -92,10 +92,9 @@ const Secciones = () => {
             position='top'
           />
           <MDBCardBody>
-            <MDBCardTitle>SECCION 5</MDBCardTitle>
+            <MDBCardTitle>SECTOR SANEAMIENTO</MDBCardTitle>
             <MDBCardText>
-              This is a longer card with supporting text below as a natural lead-in to additional content.
-              This content is a little bit longer.
+              Productos para el sector saneamiento.
             </MDBCardText>
           </MDBCardBody>
         </MDBCard>

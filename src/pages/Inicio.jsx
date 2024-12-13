@@ -32,6 +32,30 @@ export default function App() {
           <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
         </MDBCarouselCaption>
       </MDBCarouselItem>
+
+      <MDBCarouselItem itemId={4}>
+        <img src='https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg' className='d-block w-100' alt='...' />
+        <MDBCarouselCaption>
+          <h5>SECCION 4</h5>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </MDBCarouselCaption>
+      </MDBCarouselItem>
+
+      <MDBCarouselItem itemId={5}>
+        <img src='https://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg' className='d-block w-100' alt='...' />
+        <MDBCarouselCaption>
+          <h5>SECCION 5</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </MDBCarouselCaption>
+      </MDBCarouselItem>
+
+      <MDBCarouselItem itemId={6}>
+        <img src='https://mdbootstrap.com/img/Photos/Slides/img%20(23).jpg' className='d-block w-100' alt='...' />
+        <MDBCarouselCaption>
+          <h5>SECCION 6</h5>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </MDBCarouselCaption>
+      </MDBCarouselItem>
     </MDBCarousel>
     </Box>
     <Box sx={{ mt: 8 , px: 4}}>

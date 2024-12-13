@@ -23,15 +23,16 @@ const Seccion3 = () => {
     <Box sx={{ mt: 8, px:4 }}>
       <div className='seccion1-contenido' >
         <h1>
-          SECTOR 3
+        SECTOR AUTOMOTRÍZ
         </h1>
         <div className='contenido-flex'>
           <p>
-            Industria de Jebe Molivic E.I.R.L. se especializa en la fabricación de productos de caucho y jebe de alta calidad, diseñados para satisfacer las necesidades de los sectores. Ofrecemos soluciones confiables, resistentes y personalizadas para asegurar el máximo desempeño en aplicaciones exigentes. Nuestro compromiso es proporcionar innovación, durabilidad y excelencia en cada uno de nuestros productos.
+          productos de caucho para la industria automotriz destacan por su alta calidad y precisión. Desde sellos y empaques hasta soportes antivibración, ofrecemos soluciones que optimizan el rendimiento de vehículos y maquinaria.
           </p>
             <img src={ima_1} alt="imagen nuestros princ secetores" />
         </div>
       </div>
+      <div className='productos'>
       <h1>NUESTROS PRODUCTOS</h1>
       <MDBRow className='row-cols-1 row-cols-md-3 g-4'>
       <MDBCol>
@@ -127,6 +128,7 @@ const Seccion3 = () => {
         </MDBCard>
       </MDBCol>
     </MDBRow>
+    </div>
     </Box>
   );
 };
