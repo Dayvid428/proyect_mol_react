@@ -1,5 +1,5 @@
 // src/pages/Contacto.js
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../styles/Contacto.css';
 import { Box, Typography } from '@mui/material';
 import CONTACTO_FONDO from '../Multim/CONTACTO_FONDO.PNG';
@@ -9,6 +9,10 @@ import telefono from '../Multim/telefono.PNG';
 import ubicacion from '../Multim/ubicacion.PNG';
 
 function Contacto() {
+  // Desplazarse automáticamente al inicio al cargar el componente
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
   return (
       <div>
       <Box sx={{ mt: 7 }} >

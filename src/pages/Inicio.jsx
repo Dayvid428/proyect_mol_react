@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useEffect} from 'react';
 import { MDBCarousel, MDBCarouselItem, MDBCarouselCaption } from 'mdb-react-ui-kit';
 import { Box } from '@mui/material';
 import ima_1 from '../Multim/ima_1.jpg';
 import '../styles/Inicio.css';
 import Secciones from './inic/Secciones';
 export default function App() {
+  // Desplazarse automáticamente al inicio al cargar el componente
+      useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
   return (
     <div>
     <Box sx={{ mt: 8 }}>

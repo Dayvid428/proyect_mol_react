@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import MenuBar from './components/MenuBar';
 import Footer from './components/Footer';  // Importa el Footer
 import Whatsapp from './components/Whatsapp'; //Importar Whatsapp
@@ -23,6 +23,7 @@ function App() {
         <MenuBar />
         {/* Las rutas y el contenido de la página */}
         <Routes>
+          <Route path="/" element={<Navigate to="/inicio" />} />
           <Route path="/productos/Seccion1" element={<Seccion1 />} />
           <Route path="/productos/Seccion2" element={<Seccion2 />} />
           <Route path="/productos/Seccion3" element={<Seccion3 />} />
